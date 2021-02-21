@@ -1,0 +1,5 @@
+Credentials cache: API:AC03E505-BAB2-49FA-ABAB-BDA56A1A0FEF
+        Principal: jinlim@42KL.EDU.MY
+
+  Issued                Expires               Principal
+Feb 18 20:44:34 2021  Feb 19 06:44:30 2021  krbtgt/42KL.EDU.MY@42KL.EDU.MY
