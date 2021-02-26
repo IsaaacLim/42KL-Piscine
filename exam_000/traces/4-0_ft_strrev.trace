@@ -1,0 +1,105 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+u81z03s02.42kl.edu.my
+Darwin 19.6.0 x86_64
+$> date
+Fri Feb 26 17:06:12 +08 2021
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42kl.edu.my:exam-2021-02-26/jinlim_c-piscine-exam-00_exam_16h02m27s.git
+
+= Git history ==================================================================
+$> git -C /tmp/tmpqUKpgd/user log --pretty='%H - %an, %ad : %s'
+40b3817f6d6512ad1ae4183c7614a3378b7233d3 - Exam 42, Fri Feb 26 17:04:41 2021 +0800 : ft_strrev first
+60259ce79ea9db77e9120a2182c2be0f48f8646f - Exam 42, Fri Feb 26 16:43:43 2021 +0800 : ft_swap first
+0fcc692187a8a46bc0bff8bb615dcf826924770f - Exam 42, Fri Feb 26 16:37:28 2021 +0800 : maff_revalpha.c first
+a420be224ad8db7a8e06fd00b506464375a46e21 - Exam 42, Fri Feb 26 16:26:24 2021 +0800 : ft_countdown second
+10c8e46bba6b45077489fe02da15b569c3539e2b - Exam 42, Fri Feb 26 16:21:53 2021 +0800 : ft_countdown.c first
+7b556cb32149732e3b238be57befcd3d472a7259 - Exam 42, Fri Feb 26 16:10:37 2021 +0800 : only_z.c First
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmpqUKpgd/user
+total 8
+-rw-r--r--  1 root  wheel  1390 Feb 26 17:06 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel    96 Feb 26 17:06 ft_countdown
+drwxr-xr-x  3 root  wheel    96 Feb 26 17:06 ft_strrev
+drwxr-xr-x  3 root  wheel    96 Feb 26 17:06 ft_swap
+drwxr-xr-x  3 root  wheel    96 Feb 26 17:06 maff_revalpha
+drwxr-xr-x  3 root  wheel    96 Feb 26 17:06 only_z
+
+/tmp/tmpqUKpgd/user/ft_countdown:
+total 8
+-rwxr-xr-x  1 root  wheel  131 Feb 26 17:06 ft_countdown.c
+
+/tmp/tmpqUKpgd/user/ft_strrev:
+total 8
+-rw-r--r--  1 root  wheel  246 Feb 26 17:06 ft_strrev.c
+
+/tmp/tmpqUKpgd/user/ft_swap:
+total 8
+-rw-r--r--  1 root  wheel  79 Feb 26 17:06 ft_swap.c
+
+/tmp/tmpqUKpgd/user/maff_revalpha:
+total 8
+-rw-r--r--  1 root  wheel  184 Feb 26 17:06 maff_revalpha.c
+
+/tmp/tmpqUKpgd/user/only_z:
+total 8
+-rw-r--r--  1 root  wheel  60 Feb 26 17:06 only_z.c
+ 
+= ft_strrev ====================================================================
+$> gcc -Wextra -Wall -Werror ft_strrev.c main.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./07hp6kwnxkcqyipxxpec0ss8 ""
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./zpnix8xnycr5vw4k07qlx7dr "w8u31gcz"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./m3x9wjkoz352jvq8yw0blaq4 "Rhp"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./3cqayk44pcia9fj9cbghw9jn "UR7NJpM"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./gu41oo02nrcz8uc2hwazaycf "S9COnBhYaitIf"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./jjvqsu7gbpsi26hq4bq3j2w2 "Ngdqn BdWNrPmt OopdTWxtsgNcaq j8bJKMBqhP xp1D8sNy GHVWNThIZxSE S8k 0U8xupSG BQ1qm v4nQIZOwXhj"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./t150osanfib3coeojop6yo3j "BiDR4ajf9yTbKts1H eERkzVBtUHSj2 q73iIGNVClHtEy xK07 iyNK5pDbn CNODl7 VJ5hynYN8Dib3dBq"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./4ej3pu02xmx9xiift4uh7ckt "3J0bYQcDv v8nELS5 ztT3HkmCewKnj8 QI0 QoW3O8fSKJ mCWEr42hFwYcetR5 WY8VTdvC5wSh t6vu8ap0w H0dcqbyzE 43bEwGa 6L1TX R1jE6MXyg2HA94nW XrO SawU4Emp6oZM Qvdtk3 jbL8a7hUt SX8BlRrFnNLJi4qko HwauU"
+Command './4ej3pu02xmx9xiift4uh7ckt "3J0bYQcDv v8nELS5 ztT3HkmCewKnj8 QI0 QoW3O8fSKJ mCWEr42hFwYcetR5 WY8VTdvC5wSh t6vu8ap0w H0dcqbyzE 43bEwGa 6L1TX R1jE6MXyg2HA94nW XrO SawU4Emp6oZM Qvdtk3 jbL8a7hUt SX8BlRrFnNLJi4qko HwauU"' got killed by a SIGABORT (Signal -6)
+Grade: 0
+
+= Final grade: 0 ===============================================================
