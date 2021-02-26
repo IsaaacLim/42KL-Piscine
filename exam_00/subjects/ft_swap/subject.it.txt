@@ -1,0 +1,11 @@
+Nome esercizio		: ft_swap
+File da consegnare	: ft_swap.c
+Funzioni consentite	: 
+--------------------------------------------------------------------------------
+
+Scrivi una funzione che scambi il contenuto di due interi i cui indirizzi sono
+passati come parametri.
+
+La tua funzione deve essere dichiarata come segue:
+
+void	ft_swap(int *a, int *b);

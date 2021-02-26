@@ -1,0 +1,12 @@
+Nome esercizio		: ft_strrev
+File da consegnare	: ft_strrev.c
+Funzioni consentite	: 
+--------------------------------------------------------------------------------
+
+Scrivi una funzione che inverte una stringa modificandola.
+
+Deve ritornare il suo parametro.
+
+La tua funzione deve essere dichiarata come segue:
+
+char    *ft_strrev(char *str);

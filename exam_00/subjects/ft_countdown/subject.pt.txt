@@ -1,0 +1,12 @@
+Assignment name  : ft_countdown
+Expected files   : ft_countdown.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Escreva um programa que mostre todos os números em ordem decrescente, seguidos
+de uma newline.
+
+Exemplo:
+$> ./ft_countdown | cat -e
+9876543210$
+$>

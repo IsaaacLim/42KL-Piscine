@@ -1,0 +1,12 @@
+Assignment name  : maff_revalpha
+Expected files   : maff_revalpha.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Escreva um programa que mostre o alfabeto ao contrário com uma letra a cada 2 em
+minúsculo e as outras em maiúsculo (Ver o exemplo), seguido de um '\n'.
+
+Exemplo:
+
+$> ./maff_revalpha | cat -e
+zYxWvUtSrQpOnMlKjIhGfEdCbA$
