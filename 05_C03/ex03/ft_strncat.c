@@ -6,12 +6,9 @@
 /*   By: jinlim <jinlim@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/01 19:44:06 by jinlim            #+#    #+#             */
-/*   Updated: 2021/03/02 09:35:16 by jinlim           ###   ########.fr       */
+/*   Updated: 2021/03/02 12:17:04 by jinlim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
-#include <string.h>
 
 char	*ft_strncat(char *dest, char *src, unsigned int nb)
 {

@@ -6,12 +6,9 @@
 /*   By: jinlim <jinlim@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/01 20:16:28 by jinlim            #+#    #+#             */
-/*   Updated: 2021/03/02 09:36:26 by jinlim           ###   ########.fr       */
+/*   Updated: 2021/03/02 12:17:15 by jinlim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
-#include <string.h>
 
 char	*ft_strstr(char *str, char *to_find)
 {

@@ -6,12 +6,9 @@
 /*   By: jinlim <jinlim@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/01 17:57:50 by jinlim            #+#    #+#             */
-/*   Updated: 2021/03/02 09:32:21 by jinlim           ###   ########.fr       */
+/*   Updated: 2021/03/02 12:15:10 by jinlim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-#include <stdio.h>
-#include <string.h>
 
 int		ft_strcmp(char *s1, char *s2)
 {
