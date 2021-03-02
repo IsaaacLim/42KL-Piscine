@@ -6,9 +6,11 @@
 /*   By: jinlim <jinlim@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/25 21:02:41 by jinlim            #+#    #+#             */
-/*   Updated: 2021/03/02 17:49:55 by jinlim           ###   ########.fr       */
+/*   Updated: 2021/03/02 21:23:30 by jinlim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdbool.h>
 
 char	*ft_strlowcase(char *str)
 {

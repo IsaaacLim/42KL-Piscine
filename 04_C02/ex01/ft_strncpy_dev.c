@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncpy.c                                       :+:      :+:    :+:   */
+/*   ft_strncpy_dev.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jinlim <jinlim@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/25 15:09:02 by jinlim            #+#    #+#             */
-/*   Updated: 2021/03/02 10:55:42 by jinlim           ###   ########.fr       */
+/*   Updated: 2021/03/02 21:21:15 by jinlim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strncpy(char *dest, char *src, unsigned int n)
 	unsigned int i;
 
 	i = 0;
-	while (src[i] != '0' && i < n) //i < n to limit the range
+	while (src[i] != '\0' && i < n) //i < n to limit the range
 	{
 		dest[i] = src[i];
 		i++;

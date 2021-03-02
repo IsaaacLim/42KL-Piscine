@@ -6,9 +6,11 @@
 /*   By: jinlim <jinlim@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/01 13:14:55 by jinlim            #+#    #+#             */
-/*   Updated: 2021/03/02 17:50:56 by jinlim           ###   ########.fr       */
+/*   Updated: 2021/03/02 21:24:08 by jinlim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <unistd.h>
 
 void	ft_putchar(char c)
 {
