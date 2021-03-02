@@ -1,55 +1,91 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_memory_dev.c                              :+:      :+:    :+:   */
+/*   ft_print_memory.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jinlim <jinlim@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/01 15:03:07 by jinlim            #+#    #+#             */
-/*   Updated: 2021/03/02 17:53:23 by jinlim           ###   ########.fr       */
+/*   Updated: 2021/03/02 22:44:37 by jinlim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include <unistd.h>
 
-void	puthex(char c)
+void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
 
-void	ft_nonprintable(char *c)
+void	ft_dextohex(char *str)
 {
-	int i;
+	int		i;
+	int		j;
+	char	c;
 
 	i = 0;
-	while (*c && *c >= ' ' && *c <= 126)
+	while (str[i])
 	{
-		write(1, &"0123456789abcdef"[*c / 16], 1);
-		write(1, &"0123456789abcdef"[*c % 16], 1);
-		c++;
+		c = str[i];
+		j = 0;
+		while (j < 2)
+		{
+			ft_putchar("0123456789abcdef"[c / 16]);
+			ft_putchar("0123456789abcdef"[c % 16]);
+			j++;
+		}
+		ft_putchar(' ');
+		i++;
 	}
 }
 
-void	ft_printable(char *c)
+int		ft_char_is_printable(char c)
 {
-	int i;
+	if (c >= ' ' && c <= 126)
+		return (1);
+	else
+		return (0);
+}
+
+void	ft_putstr_non_printable(char *str)
+{
+	int		i;
+	char	c;
 
 	i = 0;
-	while (c[i] && c[i] >= ' ' && c[i] <= 126)
+	while (str[i])
+	{
+		c = str[i];
+		if ((ft_char_is_printable(c) == 1))
+			ft_putchar(c);
+		else
+		{
+			ft_putchar('.');
+		}
 		i++;
-	write(1, c, i);
+	}
 }
 
 void	*ft_print_memory(void *addr, unsigned int size)
 {
-	char *add;
+	int		i;
+	char	arr[size];
 
-	add = addr;
-	size += 1;
-	ft_nonprintable(add);
-	ft_printable(": ");
-	ft_printable(add);
+	if (size == 0)
+		return (0);
+	while ((char *)addr)
+	{
+		i = 0;
+		while (i < 16)
+		{
+			arr[i] = *(char *)addr;
+			i++;
+			addr++;
+		}
+		ft_dextohex(arr);
+		ft_putstr_non_printable(arr);
+		ft_putchar('\n');
+	}
 	return (addr);
 }
 
