@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr_dev.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jinlim <jinlim@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/19 15:27:39 by jinlim            #+#    #+#             */
-/*   Updated: 2021/03/03 12:11:03 by jinlim           ###   ########.fr       */
+/*   Updated: 2021/03/03 12:10:43 by jinlim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,4 +38,18 @@ void	ft_putnbr(int nb)
 		ft_putnbr(nb / 10);
 		ft_putnbr(nb % 10);
 	}
+}
+
+int		main(void)
+{
+	ft_putnbr(42);
+	ft_putchar('\n');
+	ft_putnbr(42123456);
+	ft_putchar('\n');
+	ft_putnbr(-42);
+	ft_putchar('\n');
+	ft_putnbr(-4223456);
+	ft_putchar('\n');
+	ft_putnbr(+42);
+	ft_putchar('\n');
 }
