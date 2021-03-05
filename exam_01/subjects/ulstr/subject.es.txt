@@ -1,0 +1,24 @@
+Assignment name  : ulstr
+Expected files   : ulstr.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Escriba un programa que reciba como parámetro una cadena de caracteres y
+transforme todas las minúsculas en mayúsculas y todas la mayúsculas en
+minúsculas. Los demás caracteres no se modifican.
+
+Debe mostrar el resultado seguido de un '\n'.
+
+Si el número de parámetros transmitidos es distinto de 1, el programa mostrará
+'\n'.
+
+Ejemplos:
+
+$>./ulstr "El eSPiritu nO puEde sEguIR pRogReSando si se parAliza y si peRsIsTen la VanIdad y la autojustificacion." | cat -e
+$>./ulstr "eL EspIRITU No PUeDE SeGUir PrOGrEsANDO SI SE PARaLIZA Y SI PErSiStEN LA vANIDAD Y LA AUTOJUSTIFICACION."
+$>./ulstr "RodEarSE De SecREtos Es Un SigNo dE IGnORanciA.  " | cat -e
+rODeARse dE sECreTOS eS uN sIGnO De igNorANCIa.  $
+$>./ulstr "3:21 Ba  tOut  moUn ki Ka di KE m'en Ka fe fot" | cat -e
+3:21 bA  ToUT  MOuN KI kA DI ke M'EN kA FE FOT$
+$>./ulstr | cat -e
+$

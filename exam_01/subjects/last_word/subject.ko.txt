@@ -1,0 +1,26 @@
+Assignment name  : last_word
+Expected files   : last_word.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+문자열을 받아 마지막 단어만 줄바꿈과 같이 표준 출력에 출력하는 프로그램을
+작성하십시오.
+
+단어란 공백 / 탭 또는 문자열의 시작 / 끝으로 구분됩니다.
+
+만약 매개변수의 수가 1이 아니거나 단어가 없는 경우, 줄바꿈 문자를 표준 출력으로
+출력하십시오.
+
+Example:
+
+$> ./last_word "FOR PONIES" | cat -e
+PONIES$
+$> ./last_word "this        ...       is sparta, then again, maybe    not" | cat -e
+not$
+$> ./last_word "   " | cat -e
+$
+$> ./last_word "a" "b" | cat -e
+$
+$> ./last_word "  lorem,ipsum  " | cat -e
+lorem,ipsum$
+$>

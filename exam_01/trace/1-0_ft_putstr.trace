@@ -1,0 +1,89 @@
+= Host-specific information ====================================================
+$> hostname; uname -msr
+u91z01s05.42kl.edu.my
+Darwin 19.6.0 x86_64
+$> date
+Fri Mar  5 16:19:05 +08 2021
+$> gcc --version
+Configured with: --prefix=/Applications/Xcode.app/Contents/Developer/usr --with-gxx-include-dir=/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/c++/4.2.1
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+$> clang --version
+Apple LLVM version 10.0.1 (clang-1001.0.46.4)
+Target: x86_64-apple-darwin19.6.0
+Thread model: posix
+InstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
+
+= User files collection ========================================================
+Collecting user files from Vogsphere
+Repository URL: git@vogsphere.42kl.edu.my:exam-2021-03-05/jinlim_c-piscine-exam-01_exam_16h00m35s.git
+
+= Git history ==================================================================
+$> git -C /tmp/tmp73DeLF/user log --pretty='%H - %an, %ad : %s'
+4f436d213c2b6c7dca7342c2a347b5471e1b499b - Exam 42, Fri Mar 5 16:18:38 2021 +0800 : ft_putstr.c
+d50babba48291494318dfd7803bde816a94b6430 - Exam 42, Fri Mar 5 16:09:43 2021 +0800 : removed main()
+53952a0291efce169251efda75cc6f8d9f55454f - Exam 42, Fri Mar 5 16:08:36 2021 +0800 : ft_put_numbers
+ 
+= Collected files ==========================================
+$> ls -lAR /tmp/tmp73DeLF/user
+total 8
+-rw-r--r--  1 root  wheel  705 Mar  5 16:19 __GIT_HISTORY
+drwxr-xr-x  3 root  wheel   96 Mar  5 16:19 ft_print_numbers
+drwxr-xr-x  3 root  wheel   96 Mar  5 16:19 ft_putstr
+
+/tmp/tmp73DeLF/user/ft_print_numbers:
+total 8
+-rw-r--r--  1 root  wheel  143 Mar  5 16:19 ft_print_numbers.c
+
+/tmp/tmp73DeLF/user/ft_putstr:
+total 8
+-rw-r--r--  1 root  wheel  120 Mar  5 16:19 ft_putstr.c
+ 
+= ft_putstr ====================================================================
+$> gcc -Wextra -Wall -Werror main.c ft_putstr.c -o user_exe 
+
+= Test 1 ===================================================
+$> ./ah3ran4i4rjcl968gl4h4siv "8XwL6"
+$> diff -U 3 user_output_test1 test1.output | cat -e
+
+Diff OK :D
+= Test 2 ===================================================
+$> ./0d78hf6rj9r2ykn715zxlks2 "6QcqWAgj"
+$> diff -U 3 user_output_test2 test2.output | cat -e
+
+Diff OK :D
+= Test 3 ===================================================
+$> ./wi4p2vg5gyk8z5c82t6wojk7 "0fCsxZTonJ2"
+$> diff -U 3 user_output_test3 test3.output | cat -e
+
+Diff OK :D
+= Test 4 ===================================================
+$> ./62pcru02u1ogbju4gz45fa7c "jQVaR3 yrgNl2oaPItsjEA oCTVKEgBb qWZFMJrDSy jrV3QYCeZh w1xvNcpPuU wdqJGHoPB6QSyE5 bkMC6mP vDK3jyigwxeum"
+$> diff -U 3 user_output_test4 test4.output | cat -e
+
+Diff OK :D
+= Test 5 ===================================================
+$> ./sm6r79lbznv8sn7sqoaswo0d "MjUps6 wiRFqjg82mH6 zewh5MopOvd8 GgiNyF V9IvXPJNiuZDh4y EynLUs1I jE41NwW6 ytc3LbRwA IU3Cav9uOL1 P6knrYt 92SQgqwA 6mUvLVMy jKHfmdC ojZQKEuxaDR0Uek2 Xz0LQCqHmKDxeYo1"
+$> diff -U 3 user_output_test5 test5.output | cat -e
+
+Diff OK :D
+= Test 6 ===================================================
+$> ./rj972vdy56e6hp2j5p74g0tb "DGSY7agswt3E PL2mVQkX8j5qHIo MZ4mV dSOs8icY pTtonXwJ6jhFgL7m2 GOn3rsYqeuhQa 7u9teQmBgi 1RW06QtG5mFbd9l ECN1K7g249p AoktXcqM ImEj4oyrpQ 9DWyzoduHCqbpOAI g50Q8oi xqHoKLkn7EF2t5 oz4A0ulVZwLF9r2tk Xn8 LUa4D7OR IpRXQETcJHZ6a"
+$> diff -U 3 user_output_test6 test6.output | cat -e
+
+Diff OK :D
+= Test 7 ===================================================
+$> ./hmf3emp08ildjaj4dhhkbd9p "zIco3Rs5P4XvBZAS8 x6IFiG RNZY vAtd4EwolGKxP1i8"
+$> diff -U 3 user_output_test7 test7.output | cat -e
+
+Diff OK :D
+= Test 8 ===================================================
+$> ./xsgq24prf3n35fyyhxar1v3n 
+$> diff -U 3 user_output_test8 test8.output | cat -e
+
+Diff OK :D
+Grade: 1
+
+= Final grade: 1 ===============================================================

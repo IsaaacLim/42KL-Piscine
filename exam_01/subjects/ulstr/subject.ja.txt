@@ -1,0 +1,20 @@
+課題名            : ulstr
+提出ファイル       : ulstr.c
+使用可能な関数      : write
+--------------------------------------------------------------------------------
+
+文字列をコマンドライン引数から受け取り、大文字を小文字に、小文字を大文字に変換し、それ以外の文字は
+そのままにして標準出力に出力するプログラムを書きなさい。
+
+改行も忘れずに標準出力に出力しなさい。
+
+コマンドライン引数の数が1つでは無い場合、改行だけを標準出力に出力しなさい。
+
+例）
+
+$>./ulstr "PeTEr PIpeR pICKeD A PeCK of pIckLEd PEPPers." | cat -e
+pEteR piPEr PickEd a pEck OF PiCKleD peppERS.$
+$>./ulstr "A pEcK OF picKLED pePPErS PeTEr PIpeR picked.  " | cat -e
+a PeCk of PICkled PEppeRs pEteR piPEr PICKED.  $
+$>./ulstr | cat -e
+$
