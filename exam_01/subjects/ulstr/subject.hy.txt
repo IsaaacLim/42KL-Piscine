@@ -1,0 +1,19 @@
+Առաջադրանքի անունը՝ ulstr
+Ակնկալվող ֆայլեր՝ ulstr.c
+Թույլատրված ֆունկցիաներ՝ write
+--------------------------------------------------------------------------------
+Գրել ծրագիր, որ վերցնում է տողը, բոլոր մեծատառերը դարձնում է փոքրատառ, փոքրատառերը՝ մեծատառ։
+Մնացած նիշերը պետք է մնան անփոփոխ։
+
+Այդյունքը պետք է արտածվի \n-ով հաջորդված։
+
+Եթե արգումենտների թիվը 1 չէ, ծրագիրը պետք է արտածի \n։
+
+Օրինակ՝
+
+$>./ulstr "PeTEr PIpeR pICKeD A PeCK of pIckLEd PEPPers." | cat -e
+pEteR piPEr PickEd a pEck OF PiCKleD peppERS.$
+$>./ulstr "A pEcK OF picKLED pePPErS PeTEr PIpeR picked.  " | cat -e
+a PeCk of PICkled PEppeRs pEteR piPEr PICKED.  $
+$>./ulstr | cat -e
+$

@@ -1,0 +1,27 @@
+Assignment name  : last_word
+Expected files   : last_word.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Escreva um programa que tenha uma cadeia de caracteres como parâmetro e que
+exiba a última palavra dessa cadeia, seguida de um '\n'.
+
+Chamamos de "palavra" uma parte da cadeia de caracteres delimitada seja por
+espaços e/ou tabulações, seja pelo início / final da cadeia.
+
+Se o número de parâmetros transmitidos for diferente de 1 ou se não houver nenhuma palavra
+para exibir, o programa deve mostrar '\n'.
+
+Exemplo:
+
+$> ./last_word "FOR PONIES" | cat -e
+PONIES$
+$> ./last_word "this        ...       is sparta, then again, maybe    not" | cat -e
+not$
+$> ./last_word "   " | cat -e
+$
+$> ./last_word "a" "b" | cat -e
+$
+$> ./last_word "  lorem,ipsum  " | cat -e
+lorem,ipsum$
+$>

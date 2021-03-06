@@ -1,0 +1,22 @@
+Assignment name  : ulstr
+Expected files   : ulstr.c
+Allowed functions: write
+--------------------------------------------------------------------------------
+
+Escreva um programa que tenha como parâmetro uma cadeia de caracteres e que
+transforme todas as suas minúsculas em maiúsculas e todas as suas maiúsculas em
+minúsculas. Os outros caracteres permanecem inalterados.
+
+Você deve exibir o resultado seguido de um '\n'.
+
+Se o número de parâmetros transmitidos for diferente de 1, o programa exibe
+'\n'.
+
+Exemplos:
+
+$>./ulstr "PeTEr PIpeR pICKeD A PeCK of pIckLEd PEPPers." | cat -e
+pEteR piPEr PickEd a pEck OF PiCKleD peppERS.$
+$>./ulstr "A pEcK OF picKLED pePPErS PeTEr PIpeR picked.  " | cat -e
+a PeCk of PICkled PEppeRs pEteR piPEr PICKED.  $
+$>./ulstr | cat -e
+$

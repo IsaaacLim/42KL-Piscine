@@ -1,0 +1,21 @@
+Nome esercizio		: ulstr
+File da consegnare	: ulstr.c
+Funzioni consentite	: write
+--------------------------------------------------------------------------------
+
+Scrivi un programma che prenda una stringa e inverta il case(Maiuscolo o minuscolo) di
+tutte le sue lettere.
+Gli altri caratteri rimarranno invariati.
+
+Devi visualizzare il risultato seguito da un '\n'.
+
+Se il numero degli argomenti non è 1, il programma visualizza '\n'.
+
+Esempi :
+
+$>./ulstr "PeTEr PIpeR pICKeD A PeCK of pIckLEd PEPPers." | cat -e
+pEteR piPEr PickEd a pEck OF PiCKleD peppERS.$
+$>./ulstr "A pEcK OF picKLED pePPErS PeTEr PIpeR picked.  " | cat -e
+a PeCk of PICkled PEppeRs pEteR piPEr PICKED.  $
+$>./ulstr | cat -e
+$
