@@ -18,6 +18,8 @@
 
 rush_00
 
+rush_01
+
 exam_00
 
 exam_01
