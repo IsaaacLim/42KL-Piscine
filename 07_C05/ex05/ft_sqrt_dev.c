@@ -6,7 +6,7 @@
 /*   By: jinlim <jinlim@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/04 12:24:01 by jinlim            #+#    #+#             */
-/*   Updated: 2021/03/06 14:48:24 by jinlim           ###   ########.fr       */
+/*   Updated: 2021/03/10 17:15:35 by jinlim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,8 @@
 
 int		ft_sqrt(int nb)
 {
-	int sqrt;
+	unsigned int sqrt;
+	unsigned int sqr;
 
 	if (nb < 0)
 		return (0);
@@ -46,10 +47,10 @@ int		ft_sqrt(int nb)
 	else
 	{
 		sqrt = 0;
-		while (sqrt <= nb / 2)
+		while ((sqr = sqrt * sqrt) <= (unsigned)nb)//avoid running function twice
 		{
-			if (sqrt * sqrt == nb)
-				return (sqrt);
+			if (sqr == (unsigned)nb)
+				return ((int)sqrt);
 			sqrt++;
 		}
 	}
