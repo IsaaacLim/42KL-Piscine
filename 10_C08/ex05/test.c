@@ -6,7 +6,7 @@
 /*   By: jinlim <jinlim@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/10 13:17:06 by jinlim            #+#    #+#             */
-/*   Updated: 2021/03/10 14:52:00 by jinlim           ###   ########.fr       */
+/*   Updated: 2021/03/10 17:32:19 by jinlim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define FT_SHOW_TAB_C
 
 # include "ft_stock_str.h"
+# include <stdlib.h>
 
 #endif
 
@@ -34,4 +35,5 @@ int					main(int argc, char **argv)
 		i++;
 	}
 //	ft_show_tab(ft_strs_to_tab(argc, argv)); //better way
+	free(arr);
 }
