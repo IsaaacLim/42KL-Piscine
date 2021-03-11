@@ -6,7 +6,7 @@
 /*   By: jinlim <jinlim@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/11 21:45:42 by jinlim            #+#    #+#             */
-/*   Updated: 2021/03/11 22:58:27 by jinlim           ###   ########.fr       */
+/*   Updated: 2021/03/12 00:36:03 by jinlim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,9 @@ char	*ft_putnbr_base(unsigned int dec_num, char *base_to, int val)
 	if (val == -1)
 		base_num_len++;
 	if (!(arr = (char *)malloc((base_num_len + 1) * sizeof(char))))
-		return (NULL);
+		return (0);
 	i = -1;
-	if (val == -1)
+	if (val < 0)
 	{
 		arr[0] = '-';
 		i++;
@@ -65,7 +65,6 @@ char	*ft_convert_base(char *nbr, char *base_from, char *base_to)
 {
 	int		dec_num;
 	int		val;
-	char	*last_base_num;
 
 	if (!(ft_check_valid(base_from) && ft_check_valid(base_to)))
 		return (NULL);
@@ -76,6 +75,5 @@ char	*ft_convert_base(char *nbr, char *base_from, char *base_to)
 		dec_num *= -1;
 		val = -1;
 	}
-	last_base_num = ft_putnbr_base(dec_num, base_to, val);
-	return (last_base_num);
+	return (ft_putnbr_base(dec_num, base_to, val));
 }
