@@ -6,7 +6,7 @@
 /*   By: jinlim <jinlim@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/10 13:17:06 by jinlim            #+#    #+#             */
-/*   Updated: 2021/03/10 16:54:58 by jinlim           ###   ########.fr       */
+/*   Updated: 2021/03/11 11:46:12 by jinlim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@
 
 #endif
 
-struct s_stock_str	*ft_strs_to_tab(int ac, char **av);
+//struct s_stock_str	*ft_strs_to_tab(int ac, char **av);//don't include this
 
 void				ft_putchar(char c)
 {

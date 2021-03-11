@@ -6,7 +6,7 @@
 /*   By: jinlim <jinlim@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/08 10:44:14 by jinlim            #+#    #+#             */
-/*   Updated: 2021/03/08 10:48:36 by jinlim           ###   ########.fr       */
+/*   Updated: 2021/03/11 11:45:27 by jinlim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ void	ft_putchar(char c);
 void	ft_swap(int *a, int *b);
 void	ft_putstr(char *str);
 int		ft_strlen(char *str);
-int		ft_strlcmp(char *s1, char *s2);
+int		ft_strcmp(char *s1, char *s2);
 
 #endif

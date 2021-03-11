@@ -6,7 +6,7 @@
 /*   By: jinlim <jinlim@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/10 13:46:12 by jinlim            #+#    #+#             */
-/*   Updated: 2021/03/10 16:45:04 by jinlim           ###   ########.fr       */
+/*   Updated: 2021/03/10 23:52:58 by jinlim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,13 +28,13 @@ int					ft_strlen(char *str)
 	return (i);
 }
 
-char				*ft_strcpy(char *src)
+char				*ft_strdup(char *src)
 {
 	int		i;
 	char	*dest;
 
-	if (!(dest = (char *)malloc(ft_strlen(src) * sizeof(char))))
-		return (NULL);
+	if (!(dest = (char *)malloc(ft_strlen(src) * sizeof(char) + 1)))
+		return (0);
 	i = 0;
 	while (src[i])
 	{
@@ -51,13 +51,13 @@ struct s_stock_str	*ft_strs_to_tab(int ac, char **av)
 	int			i;
 
 	if (!(arr = malloc((ac + 1) * (sizeof(struct s_stock_str)))))
-		return (NULL);
+		return (0);
 	i = 0;
 	while (i < ac)
 	{
 		arr[i].size = ft_strlen(av[i]);
 		arr[i].str = av[i];
-		arr[i].copy = ft_strcpy(av[i]);
+		arr[i].copy = ft_strdup(av[i]);
 		i++;
 	}
 	arr[i].str = 0;
