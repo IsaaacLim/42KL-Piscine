@@ -6,7 +6,7 @@
 /*   By: jinlim <jinlim@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/03/10 22:13:14 by jinlim            #+#    #+#             */
-/*   Updated: 2021/03/11 22:46:32 by jinlim           ###   ########.fr       */
+/*   Updated: 2021/03/12 00:31:40 by jinlim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,7 +51,7 @@ char	*ft_strcat(char *dest, char *src)
 		dest[len + i] = src[i];
 		i++;
 	}
-//	dest[len + i] = '\0'; //don't cat behind each string
+	dest[len + i] = '\0';
 	return (dest);
 }
 
@@ -61,6 +61,8 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	int		totlen;
 	char	*arr;
 
+	if (size < 0)
+		return (NULL);
 	if (size == 0)
 	{
 		arr = (char *)malloc(sizeof(char));
@@ -70,16 +72,15 @@ char	*ft_strjoin(int size, char **strs, char *sep)
 	totlen = ft_ulstrlen(size, strs, sep);
 	if (!(arr = (char *)malloc(totlen * sizeof(char) + 1)))
 		return (0);
+	*arr = 0;
 	i = 0;
 	while (i < size)
 	{
 		ft_strcat(arr, strs[i]);
-		if (!(i == size - 1))
+		if (i < size - 1)
 			ft_strcat(arr, sep);
 		i++;
 	}
-//	arr[i] = '\0'; //will fill at i-th position of the string;
-	ft_strcat(arr, "\0");
 	return (arr);
 }
 
