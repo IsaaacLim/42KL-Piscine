@@ -1,3 +1,6 @@
+# Results:
+ex05 KO
+
 ## Contains
 ft_strdup.c
 
