@@ -1,6 +1,3 @@
-# Result: 
-ex03 SIGABOT; ex04 KO
-
 ## Contains
 ft_strdup.c
 
