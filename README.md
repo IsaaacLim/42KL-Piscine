@@ -1,4 +1,4 @@
-# 42KL
+# 42KL Piscine
 
 - 00_S00
 
